@@ -25,7 +25,7 @@ Imbuement* Imbuements::getImbuement(uint16_t id) {
 	return &it->second;
 }
 
-bool Imbuements::loadFromXml(bool /* reloading */) {
+bool Imbuements::loadFromXml(bool /* reloading */)6 {
 	pugi::xml_document doc;
 	auto folder = g_configManager().getString(CORE_DIRECTORY) + "/XML/imbuements.xml";
 	pugi::xml_parse_result result = doc.load_file(folder.c_str());
